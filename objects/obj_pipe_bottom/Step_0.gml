@@ -11,7 +11,7 @@ if (x < -width) {
 	instance_destroy();
 }
 
-if (x + width < obj_bird.x && !score_added) {
+if (x + width < obj_bird.x + bird_half_width && !score_added) {
 	score_added = true;
 	global.game_score++;
 }
