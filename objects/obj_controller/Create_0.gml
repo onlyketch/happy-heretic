@@ -9,3 +9,7 @@ global.best_score = ini_read_real("scores", "best_score", 0);
 ini_close();
 
 game_over = false;
+
+layer_hspeed("Background_1", -0.25);
+layer_hspeed("Background_2", -1);
+layer_hspeed("Background_3", -1);
