@@ -1,13 +1,13 @@
-if (is_animating) {
-	title_y_pos = lerp(title_y_pos, target_y, 0.1);
+//if (is_animating) {
+//	title_y_pos = lerp(title_y_pos, target_y, 0.1);
 	
-	if (title_y_pos >= target_y - 0.5) {
-		title_y_pos = target_y;
-		is_animating = false;
-	}
-}
+//	if (title_y_pos >= target_y - 0.5) {
+//		title_y_pos = target_y;
+//		is_animating = false;
+//	}
+//}
 
-var btn_replay_y = title_y_pos + 24 + 46;
+var btn_y = title_y_pos + title_height + 74;
 
 if (device_mouse_check_button_pressed(0, mb_left)) {
 	var mx = device_mouse_x_to_gui(0);
@@ -16,11 +16,22 @@ if (device_mouse_check_button_pressed(0, mb_left)) {
 	if (point_in_rectangle(
 		mx, my,
 		btn_replay_x,
-		btn_replay_y,
-		btn_replay_x + btn_replay_w,
-		btn_replay_y + btn_replay_h
+		btn_y,
+		btn_replay_x + btn_width,
+		btn_y + btn_height
 	)) {
-		obj_session.is_restart = true;
-		room_restart();
+		show_debug_message("Replay!");
+		//obj_session.is_restart = true;
+		//room_restart();
+	}
+	
+	if (point_in_rectangle(
+		mx, my,
+		btn_records_x,
+		btn_y,
+		btn_records_x + btn_width,
+		btn_y + btn_height
+	)) {
+		show_debug_message("Records!");
 	}
 }

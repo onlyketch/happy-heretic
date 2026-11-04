@@ -1,4 +1,4 @@
-display_set_gui_size(320, 180);
+display_set_gui_size(global.base_width, global.base_height);
 
 var str_score = string(global.game_score);
 var score_width = string_length(str_score) * 12 + 1;
