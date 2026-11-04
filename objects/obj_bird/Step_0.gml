@@ -9,3 +9,7 @@ if (global.game_state == 0 && !obj_session.is_restart) {
 	}
 
 }
+
+if (global.game_state > 1 && image_speed > 0) {
+	image_speed = 0;
+}
