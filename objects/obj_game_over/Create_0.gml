@@ -12,10 +12,11 @@ btn_height = sprite_get_height(s_btn_replay);
 btn_replay_x = room_center - panel_width/2;
 btn_records_x = room_center + panel_width/2 - btn_width;
 
-title_y_pos = 20;
+filled_bars = global.game_rating;
+
+title_y_pos = -120;
 target_y = 20;
 is_animating = false;
 
 
-
-//alarm[0] = game_get_speed(gamespeed_fps);
+alarm[0] = game_get_speed(gamespeed_fps);

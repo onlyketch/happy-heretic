@@ -25,6 +25,8 @@ var best_x = panel_right_x_offset;
 var time = addZero(global.game_minutes) + ":" + addZero(global.game_seconds);
 var time_x = panel_left_x_offset;
 
+var bar_x = panel_left_x_offset;
+
 
 draw_sprite(s_gm_title, 0, title_x, title_y);
 
@@ -65,6 +67,20 @@ for (var i = 1; i <= string_length(time); i++) {
 		draw_sprite(s_time_sep, 0, time_x, panel_top_y2_offset);
 		time_x += 4;	
 	}
+	
+}
+
+// Raiting bars
+
+for (var i = 0; i < 5; i++) {
+	
+	if (i < filled_bars) {
+		draw_sprite(s_rating_bar, 1, bar_x, panel_top_y1_offset);
+	} else {
+		draw_sprite(s_rating_bar, 0, bar_x, panel_top_y1_offset);	
+	}
+	
+	bar_x += 6;
 	
 }
 
