@@ -3,8 +3,9 @@ global.base_height = 180;
 
 global.game_state = 0;
 global.game_score = 0;
+global.game_time = 0;
 global.game_minutes = 0;
-global.game_seconds = 10;
+global.game_seconds = 0;
 global.game_rating = 3;
 
 ini_open("save.ini");

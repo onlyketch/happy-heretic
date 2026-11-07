@@ -9,10 +9,18 @@ if (global.game_state == 3 && !game_over) {
 	}
 	
 	instance_create_layer(x, y, "Instances", obj_game_over);
+
 }
 
 if (global.game_state > 1) {
 	layer_hspeed("Background_1", 0);
 	layer_hspeed("Background_2", 0);
 	layer_hspeed("Background_3", 0);
+}
+
+if (global.game_state == 1) {
+	global.game_time += delta_time / 1000000;
+	
+	global.game_minutes = floor(global.game_time / 60);
+	global.game_seconds = floor(global.game_time % 60);
 }
