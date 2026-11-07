@@ -39,3 +39,7 @@ if (snake_time > 0) {
 	}
 
 }
+
+if (flash_time > 0) {
+	flash_time -= 1;
+}

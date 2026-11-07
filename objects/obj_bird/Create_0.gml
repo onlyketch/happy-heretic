@@ -1,4 +1,4 @@
-image_speed = 0.25;
+image_speed = 0.30;
 gravity_direction = 270;
 gravity_val = 0.18;
 fly_speed = 3.2;

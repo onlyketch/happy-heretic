@@ -13,7 +13,9 @@ if (global.game_state == 0 && !obj_session.is_restart) {
 if (y <= -sprite_height && global.game_state == 1) {
 	global.game_state = 2;
 	obj_controller.snake_time = 10;
+	obj_controller.flash_time = 5;
 }
+
 
 if (global.game_state > 1 && image_speed > 0) {
 	image_speed = 0;
