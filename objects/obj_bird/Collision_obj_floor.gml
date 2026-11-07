@@ -1,4 +1,7 @@
 if (global.game_state < 3) {
+	if (global.game_state == 1) {
+		obj_controller.snake_time = 10;
+	}
 	global.game_state = 3;
 	vspeed = 0;
 	gravity = 0;

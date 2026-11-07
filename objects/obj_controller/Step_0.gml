@@ -24,3 +24,18 @@ if (global.game_state == 1) {
 	global.game_minutes = floor(global.game_time / 60);
 	global.game_seconds = floor(global.game_time % 60);
 }
+
+if (snake_time > 0) {
+	snake_time--;
+	
+	camera_set_view_pos(
+		view_camera[0],
+		camera_x + irandom_range(-2, 2),
+		camera_y + irandom_range(-2, 2)
+	);
+	
+	if (snake_time <= 0) {
+		camera_set_view_pos(view_camera[0], camera_x, camera_y);
+	}
+
+}
