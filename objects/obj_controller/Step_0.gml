@@ -8,6 +8,8 @@ if (global.game_state == 3 && !game_over) {
 		ini_close();
 	}
 	
+	global.game_rating = calcRating(global.game_score, global.best_score);
+	
 	instance_create_layer(x, y, "Instances", obj_game_over);
 
 }

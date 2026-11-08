@@ -54,6 +54,7 @@
     {"id":{"name":"obj_session","path":"objects/obj_session/obj_session.yy",},},
     {"id":{"name":"r_game","path":"rooms/r_game/r_game.yy",},},
     {"id":{"name":"addZero","path":"scripts/addZero/addZero.yy",},},
+    {"id":{"name":"calcRating","path":"scripts/calcRating/calcRating.yy",},},
     {"id":{"name":"s_bg_0","path":"sprites/s_bg_0/s_bg_0.yy",},},
     {"id":{"name":"s_bg_1","path":"sprites/s_bg_1/s_bg_1.yy",},},
     {"id":{"name":"s_bg_2","path":"sprites/s_bg_2/s_bg_2.yy",},},

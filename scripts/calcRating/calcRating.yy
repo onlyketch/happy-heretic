@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"calcRating",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"calcRating",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
