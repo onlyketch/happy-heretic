@@ -22,6 +22,10 @@ var str_best = string(global.best_score);
 var best_len = string_length(str_best);
 var best_x = panel_right_x_offset;
 
+var new_x = panel_x + panel_w/2 - 52;
+var new_y = panel_y + 30;
+
+
 var time = addZero(global.game_minutes) + ":" + addZero(global.game_seconds);
 var time_x = panel_left_x_offset;
 
@@ -44,6 +48,12 @@ for (var i = score_len; i >= 1; i--) {
 	
 	score_x -= (num == 1) ? 6 : 9;
 }
+
+// New
+if (global.new_record) {
+	draw_sprite(s_new, 0, new_x, new_y);
+}
+
 
 // Best score
 for (var i = best_len; i >= 1; i--) {

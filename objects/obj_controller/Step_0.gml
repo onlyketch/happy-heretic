@@ -3,6 +3,7 @@ if (global.game_state == 3 && !game_over) {
 	
 	if (global.game_score > global.best_score) {	
 		global.best_score = global.game_score;
+		global.new_record = true;
 		ini_open("save.ini");
 		ini_write_real("scores", "best_score", global.best_score);
 		ini_close();

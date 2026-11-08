@@ -7,6 +7,7 @@ global.game_time = 0;
 global.game_minutes = 0;
 global.game_seconds = 0;
 global.game_rating = 0;
+global.new_record = false;
 
 ini_open("save.ini");
 global.best_score = ini_read_real("scores", "best_score", 0);
