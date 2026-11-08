@@ -59,6 +59,7 @@
     {"id":{"name":"s_bg_1","path":"sprites/s_bg_1/s_bg_1.yy",},},
     {"id":{"name":"s_bg_2","path":"sprites/s_bg_2/s_bg_2.yy",},},
     {"id":{"name":"s_bg_3","path":"sprites/s_bg_3/s_bg_3.yy",},},
+    {"id":{"name":"s_bird_bump","path":"sprites/s_bird_bump/s_bird_bump.yy",},},
     {"id":{"name":"s_bird","path":"sprites/s_bird/s_bird.yy",},},
     {"id":{"name":"s_btn_records","path":"sprites/s_btn_records/s_btn_records.yy",},},
     {"id":{"name":"s_btn_replay","path":"sprites/s_btn_replay/s_btn_replay.yy",},},
