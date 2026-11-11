@@ -14,4 +14,5 @@ if (x < -width) {
 if (x + width < obj_bird.x + bird_half_width && !score_added) {
 	score_added = true;
 	global.game_score++;
+	audio_play_sound(snd_collect, 10, false);
 }

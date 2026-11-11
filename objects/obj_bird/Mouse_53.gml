@@ -5,4 +5,5 @@ if (global.game_state == 0) {
 
 if (global.game_state == 1) {
 	vspeed = -fly_speed;
+	audio_play_sound(snd_jump, 10, false);
 }
