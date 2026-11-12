@@ -15,6 +15,8 @@ if (y <= -sprite_height && global.game_state == 1) {
 	sprite_index = s_bird_bump;
 	obj_controller.snake_time = 10;
 	obj_controller.flash_time = 5;
+	audio_stop_all();
+	audio_play_sound(snd_bump, 10, false);
 }
 
 

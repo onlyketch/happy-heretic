@@ -12,4 +12,5 @@ if (obj_session.is_restart) {
 	global.game_state = 1;
 	gravity = gravity_val;
 	vspeed = -fly_speed;
+	audio_play_sound(snd_jump, 10, false);
 }
